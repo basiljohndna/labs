@@ -1,0 +1,196 @@
+@font-face {
+	font-family: "CalciteWebCoreIcons";
+	src: url("https://js.arcgis.com/4.17/esri/themes/base/icons/fonts/CalciteWebCoreIcons.ttf?avpuei") format("truetype"), url("https://js.arcgis.com/4.17/esri/themes/base/icons/fonts/CalciteWebCoreIcons.woff?avpuei") format("woff"), url("https://js.arcgis.com/4.17/esri/themes/base/icons/fonts/CalciteWebCoreIcons.svg?avpuei#CalciteWebCoreIcons") format("svg");
+	font-weight: normal;
+	font-style: normal
+}
+
+.esri-search {
+    width: 240px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.esri-widget {
+    box-sizing: border-box;
+    color: #323232;
+    font-size: 14px;
+    font-family: "Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.3em;
+    background-color: #fff;
+}
+
+.esri-search__container {
+    position: relative;
+    align-items: stretch;
+    flex: 1 0 100%;
+}
+
+.esri-search__container, .esri-search__input-container, .esri-search__form {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.esri-search__warning-menu {
+    z-index: 1;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.esri-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    padding: 0;
+    margin: 2px 0 0 0;
+    font-size: 14px;
+    line-height: 16px;
+    background-clip: padding-box;
+    overflow: hidden;
+    width: 100%;
+    visibility: hidden;
+    max-height: 0;
+}
+
+.esri-search__container .esri-search__input, .esri-search__container .esri-widget--button {
+    z-index: 0;
+}
+
+.esri-search .esri-widget--button {
+    box-shadow: none;
+}
+
+.esri-search__submit-button {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: solid 1px rgba(110,110,110,0.3);
+}
+
+.esri-search__submit-button, .esri-search__sources-button {
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.esri-widget--button {
+    font-size: 14px;
+    background-color: #fff;
+    color: #6e6e6e;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 125ms ease-in-out;
+}
+
+.esri-search__input-container {
+    align-items: stretch;
+    flex: 2 0;
+}
+
+.esri-search__form {
+    padding: 0;
+    margin: 0;
+    align-items: stretch;
+    flex: 1 0;
+}
+
+.esri-search__input {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.esri-input {
+    background-color: #fff;
+    border: 1px solid rgba(110,110,110,0.3);
+    color: #323232;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.esri-input[type="text"], .esri-input[type="password"], .esri-input[type="number"] {
+    height: 32px;
+    padding: 0 0.5em;
+}
+
+.esri-search--show-suggestions .esri-search__suggestions-menu, .esri-search--sources .esri-search__sources-menu {
+    overflow: auto;
+    visibility: visible;
+    max-height: 300px;
+    animation: esri-fade-in 250ms ease-out;
+}
+
+.esri-menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.esri-menu__list-item:first-child {
+    border-top: none;
+}
+.esri-menu__list-item {
+    padding: 0.8em 1em;
+    cursor: pointer;
+    border-top: solid 1px rgba(110,110,110,0.3);
+    border-left: 3px solid transparent;
+}
+
+.esri-search__warning-menu {
+    z-index: 1;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.esri-search .esri-icon-notice-triangle {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 5px 0 0;
+    vertical-align: text-bottom;
+}
+
+.esri-icon-search:before {
+    content: "\e67b";
+    color: inherit;
+}
+
+[class^="esri-icon"] {
+    animation: none;
+}
+[class*="esri-icon"] {
+    font-size: 16px;
+    display: inline-block;
+}
+.esri-widget *, .esri-widget *:before, .esri-widget *:after {
+    box-sizing: inherit;
+}
+
+
+[class^="esri-icon-"], .esri-building-level-picker__arrow-up, .esri-building-level-picker__arrow-down, .esri-building-phase-picker__arrow-left, .esri-building-phase-picker__arrow-right, [class*=" esri-icon-"] {
+    font-family: "CalciteWebCoreIcons" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
